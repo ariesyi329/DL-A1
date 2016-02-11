@@ -4,8 +4,7 @@ require('xlua')
 
 -- Assign the paths of training data, testing data, and model
 data_path = 'mnist.t7'
-model_path = "results"
-model_file = paths.concat(model_path, 'model_128x128x256_epoch10.net')
+model_file = 'model.net'
 
 -- Load the model
 model = torch.load(model_file)
